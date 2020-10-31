@@ -41,15 +41,15 @@ class _NintendoProgressIndicatorState extends State<NintendoProgressIndicator>
 
     _sizeAnimationController.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        doAnimate();
+        _doAnimate();
       }
     });
 
-    doAnimate();
+    _doAnimate();
     super.initState();
   }
 
-  void doAnimate() {
+  void _doAnimate() {
     _sizeAnimationController.reset();
     _slideAnimationController.reset();
 
@@ -71,11 +71,6 @@ class _NintendoProgressIndicatorState extends State<NintendoProgressIndicator>
       constraints: BoxConstraints.tightFor(
           width: (12.0 + 44.0 + 12.0 + 44.0 + 12.0 + 44.0 + 12.0)),
       margin: EdgeInsets.only(right: 44.0 + 12.0 + 12.0),
-      // decoration: BoxDecoration(
-      //     border: Border.all(
-      //         color: Color.fromARGB(255, 0, 0, 0),
-      //         style: BorderStyle.solid,
-      //         width: 1.0)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
