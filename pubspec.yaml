@@ -1,8 +1,8 @@
 name: nintendo_progress_indicator
-description: A new Flutter package project.
+description: Indeterminate progress indicator meant to resemble that found on Nintendo.com.
 version: 0.0.1
-author:
-homepage:
+author: James Robert Perih <james@fourandahalfgiraffes.ca>
+homepage: https://fourandahalfgiraffes.ca
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
